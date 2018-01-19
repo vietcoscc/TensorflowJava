@@ -9,6 +9,10 @@ public class MainFrame extends JFrame {
         setSize(1280, 720);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        add(new MainPanel());
+        try {
+            add(new MainPanel());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
