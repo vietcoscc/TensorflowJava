@@ -1,0 +1,32 @@
+<component name="libraryTable">
+  <library name="org.bytedeco:javacv-platform:1.4" type="repository">
+    <properties maven-id="org.bytedeco:javacv-platform:1.4" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/bytedeco/javacv-platform/1.4/javacv-platform-1.4.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/bytedeco/javacv/1.4/javacv-1.4.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/bytedeco/javacpp/1.4/javacpp-1.4.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/bytedeco/javacpp-presets/opencv/3.4.0-1.4/opencv-3.4.0-1.4.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/bytedeco/javacpp-presets/ffmpeg/3.4.1-1.4/ffmpeg-3.4.1-1.4.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/bytedeco/javacpp-presets/flycapture/2.11.3.121-1.4/flycapture-2.11.3.121-1.4.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/bytedeco/javacpp-presets/libdc1394/2.2.5-1.4/libdc1394-2.2.5-1.4.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/bytedeco/javacpp-presets/libfreenect/0.5.3-1.4/libfreenect-0.5.3-1.4.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/bytedeco/javacpp-presets/libfreenect2/0.2.0-1.4/libfreenect2-0.2.0-1.4.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/bytedeco/javacpp-presets/librealsense/1.12.1-1.4/librealsense-1.12.1-1.4.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/bytedeco/javacpp-presets/videoinput/0.200-1.4/videoinput-0.200-1.4.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/bytedeco/javacpp-presets/artoolkitplus/2.3.1-1.4/artoolkitplus-2.3.1-1.4.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/bytedeco/javacpp-presets/flandmark/1.07-1.4/flandmark-1.07-1.4.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/bytedeco/javacpp-presets/opencv-platform/3.4.0-1.4/opencv-platform-3.4.0-1.4.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/bytedeco/javacpp-presets/ffmpeg-platform/3.4.1-1.4/ffmpeg-platform-3.4.1-1.4.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/bytedeco/javacpp-presets/flycapture-platform/2.11.3.121-1.4/flycapture-platform-2.11.3.121-1.4.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/bytedeco/javacpp-presets/libdc1394-platform/2.2.5-1.4/libdc1394-platform-2.2.5-1.4.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/bytedeco/javacpp-presets/libfreenect-platform/0.5.3-1.4/libfreenect-platform-0.5.3-1.4.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/bytedeco/javacpp-presets/libfreenect2-platform/0.2.0-1.4/libfreenect2-platform-0.2.0-1.4.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/bytedeco/javacpp-presets/librealsense-platform/1.12.1-1.4/librealsense-platform-1.12.1-1.4.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/bytedeco/javacpp-presets/videoinput-platform/0.200-1.4/videoinput-platform-0.200-1.4.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/bytedeco/javacpp-presets/artoolkitplus-platform/2.3.1-1.4/artoolkitplus-platform-2.3.1-1.4.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/bytedeco/javacpp-presets/flandmark-platform/1.07-1.4/flandmark-platform-1.07-1.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

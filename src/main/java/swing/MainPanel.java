@@ -1,18 +1,18 @@
 package swing;
 
+import javafx.scene.media.MediaPlayer;
+
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.awt.image.DataBufferByte;
-import java.nio.Buffer;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 import java.util.Vector;
-
 public class MainPanel extends JPanel {
 
     private Graphics2D g2d;
@@ -60,7 +60,6 @@ public class MainPanel extends JPanel {
         System.out.println(smallImage.getWidth() + "," + smallImage.getHeight());
         System.out.println(hugeImage.getWidth() + "," + hugeImage.getHeight());
 
-//        BasicStroke basicStroke= new BasicStroke();
         for (int i = 0; i < results.size(); i++) {
             Classifier.Recognition result = results.get(i);
             if (result.getConfidence() >= 0.99) {

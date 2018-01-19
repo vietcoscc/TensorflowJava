@@ -1,7 +1,9 @@
 package swing;
 
-import org.tensorflow.*;
-
+import org.tensorflow.DataType;
+import org.tensorflow.Graph;
+import org.tensorflow.Session;
+import org.tensorflow.Tensor;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;
@@ -54,34 +56,6 @@ public class TensorFlowInferenceJavaInterface {
         this.runner.feed(tid.name, tid.outputIndex, t);
         this.feedNames.add(inputName);
         this.feedTensors.add(t);
-    }
-
-    private static class TensorId {
-        String name;
-        int outputIndex;
-
-        private TensorId() {
-        }
-
-        public static TensorFlowInferenceJavaInterface.TensorId parse(String name) {
-            TensorFlowInferenceJavaInterface.TensorId tid = new TensorFlowInferenceJavaInterface.TensorId();
-            int colonIndex = name.lastIndexOf(58);
-            if (colonIndex < 0) {
-                tid.outputIndex = 0;
-                tid.name = name;
-                return tid;
-            } else {
-                try {
-                    tid.outputIndex = Integer.parseInt(name.substring(colonIndex + 1));
-                    tid.name = name.substring(0, colonIndex);
-                } catch (NumberFormatException var4) {
-                    tid.outputIndex = 0;
-                    tid.name = name;
-                }
-
-                return tid;
-            }
-        }
     }
 
     public void run(String[] outputNames) {
@@ -147,5 +121,33 @@ public class TensorFlowInferenceJavaInterface {
 
     public void fetch(String outputName, FloatBuffer dst) {
         this.getTensor(outputName).writeTo(dst);
+    }
+
+    private static class TensorId {
+        String name;
+        int outputIndex;
+
+        private TensorId() {
+        }
+
+        public static TensorFlowInferenceJavaInterface.TensorId parse(String name) {
+            TensorFlowInferenceJavaInterface.TensorId tid = new TensorFlowInferenceJavaInterface.TensorId();
+            int colonIndex = name.lastIndexOf(58);
+            if (colonIndex < 0) {
+                tid.outputIndex = 0;
+                tid.name = name;
+                return tid;
+            } else {
+                try {
+                    tid.outputIndex = Integer.parseInt(name.substring(colonIndex + 1));
+                    tid.name = name.substring(0, colonIndex);
+                } catch (NumberFormatException var4) {
+                    tid.outputIndex = 0;
+                    tid.name = name;
+                }
+
+                return tid;
+            }
+        }
     }
 }

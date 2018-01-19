@@ -20,18 +20,6 @@ public class RectF {
         this.bottom = location.bottom;
     }
 
-    public RectF(RectF location, float wRatio, float hRatio) {
-        this.left = location.left * wRatio;
-        this.right = location.right * wRatio;
-        this.top = location.top * hRatio;
-        this.bottom = location.bottom * hRatio;
-    }
-
-    public RectF() {
-
-    }
-
-
     public String toString() {
         return "RectF(" + left + ", " + top + ", "
                 + right + ", " + bottom + ")";

@@ -87,8 +87,8 @@ public class TensorFlowObjectDetectionAPIModel implements Classifier {
         }
 
         // Pre-allocate buffers.
-        d.outputNames = new String[]{"detection_boxes:0", "detection_scores:0",
-                "detection_classes:0", "num_detections:0"};
+        d.outputNames = new String[]{"detection_boxes", "detection_scores",
+                "detection_classes", "num_detections"};
         d.intValues = new int[d.inputSize * d.inputSize];
         d.byteValues = new byte[d.inputSize * d.inputSize * 3];
         d.outputScores = new float[MAX_RESULTS];
